@@ -1,0 +1,54 @@
+{
+  "name": "vscode-copilot-weather-chat-tool",
+  "publisher": "vscode-samples",
+  "displayName": "Weather Tool Sample",
+  "description": "A sample extension that provides weather information via language model tools",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "activationEvents": [],
+  "contributes": {
+    "languageModelTools": [
+      {
+        "name": "weather-tool_getWeather",
+        "tags": [
+          "weather",
+          "weather-tool"
+        ],
+        "toolReferenceName": "weather",
+        "displayName": "Weather Tool",
+        "modelDescription": "Get current weather information for a specified city including temperature, conditions, humidity, and wind speed",
+        "canBeReferencedInPrompt": true,
+        "icon": "$(cloud)",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string",
+              "description": "The name of the city to get weather information for"
+            }
+          },
+          "required": [
+            "city"
+          ]
+        }
+      }
+    ]
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.95.0",
+    "@types/node": "^20",
+    "typescript": "^5.8.2"
+  }
+}
