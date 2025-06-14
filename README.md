@@ -1,4 +1,4 @@
-# Weather Tool Sample
+# VSCode Copilot Weather Chat Tool
 
 A VS Code extension that demonstrates how to create a **language model tool** that integrates seamlessly with Copilot Chat.
 
@@ -25,6 +25,8 @@ Copilot: Based on the weather data, Paris is currently 25°C with cloudy conditi
 User: What's the humidity?
 Copilot: The humidity in Paris is 70%.
 ```
+
+![Weather Tool Demo](assets/demo.gif)
 
 ## Key Features
 
