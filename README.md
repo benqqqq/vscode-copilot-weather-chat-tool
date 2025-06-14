@@ -40,9 +40,9 @@ Copilot: The humidity in Paris is 70%.
 
 ```typescript
 export function registerWeatherTools(context: vscode.ExtensionContext) {
-	context.subscriptions.push(
-		vscode.lm.registerTool('weather-tool_getWeather', new WeatherTool())
-	);
+  context.subscriptions.push(
+    vscode.lm.registerTool("weather-tool_getWeather", new WeatherTool())
+  );
 }
 ```
 
@@ -71,7 +71,7 @@ export function registerWeatherTools(context: vscode.ExtensionContext) {
 ]
 ```
 
-## Running the Sample
+## Running it by yourself
 
 ```bash
 # Install dependencies

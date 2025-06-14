@@ -1,8 +1,8 @@
 {
   "name": "vscode-copilot-weather-chat-tool",
   "publisher": "vscode-samples",
-  "displayName": "Weather Tool Sample",
-  "description": "A sample extension that provides weather information via language model tools",
+  "displayName": "Weather Chat Tool",
+  "description": "A chat tool that provides weather information via language model tools",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.95.0"
